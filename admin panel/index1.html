@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- FONTASOME CSS -->
+    <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+           <img class="image__icon" width="40px" height="40px" src="https://cdn.iconscout.com/icon/free/png-256/shield-on-secure-firewall-guard-protection-security-4-3128.png" alt="">
+            <span class="logo_name">Bosh saxifa</span>
+        </div>
+        <ul class="nav-links">
+            <!-- <li>
+                <a href="#" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Bosh saxifa</span>
+                </a>
+            </li> -->
+            <li id="dropBtn">
+                <a href="#">
+                    <i class=''></i>
+                    <span class="links_name">Hokim qarorlari</span>
+                </a>
+                <div class="drops_drop">
+                    <ul class="drops">
+                        <li><a href="#" class="fayl">Uy-joy</a></li>
+                        <li><a href="#" class="fayl">Tadbirkor</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+
+            <li class="secDropBtn">
+                <a href="#">
+                    <i class=''></i>
+                   
+                    <span class="links_name" id="dropBtn">Bekor qilingan<br/> Hokim qarorlari</span>
+
+                </a>
+                <div class="drops_drop ">
+                    <ul class="drops drop_child">
+                        <li><a class="fayl" href="#">Uy-joy</a></li>
+                        <li><a class="fayl" href="#">Tadbirkor</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="thirdDrop">
+                <a href="#">
+                <i class=""></i>
+                    <span class="links_name">O'zboshimchalik</span>
+                </a>
+                <div class="drops_drop ">
+                    <ul class="drops thDrop">
+                        <li><a href="#">Uy-joy</a></li>
+                        <li><a href="#">Tadbirkor</a></li>
+                    </ul>
+                </div>
+            </li>
+           
+          
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Bosh saxifa</span>
+            </div>
+            
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Hokim qarorlari</div>
+                        <div class="number">0</div>
+                        <!-- <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                        </div> -->
+                    </div>
+                    <!-- <i class='bx bx-cart-alt cart'></i> -->
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic fsize">Bekor qilingan qarorlar</div>
+                        <div class="number">0</div>
+                        <!-- <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                        </div> -->
+                    </div>
+                    <!-- <i class='bx bxs-cart-add cart two'></i> -->
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">O'zboshimchalik</div>
+                        <div class="number">0</div>
+                        <!-- <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                        </div> -->
+                    </div>
+                    <!-- <i class='bx bx-cart cart three'></i> -->
+                </div>
+                <!-- <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Return</div>
+                        <div class="number" id="totals">0</div>
+                        <div class="indicator">
+                            <i class='bx bx-down-arrow-alt down'></i>
+                            <span class="text">Down From Today</span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-download cart four'></i>
+                </div> -->
+            </div>
+        </div>
+        <!-- box in jarima -->
+        <div class="previews">
+            <div class="container-fluid absolute">
+                <div class="row">
+                    <div class="col-md-10">
+                        <form class="row g-3" enctype="multipart/form-data">
+                            <span class="fas fa-times fa-2x text-white closeBtn my-4"></span>
+                            <div class="col-md-6 mt-3">
+                                <label for="email-input" class="form-label text-white">Viloyat</label>
+                                <input type="text" name="viloyat" class="form-control" id="email-input">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email-input2" class="form-label text-white">Тuman</label>
+                                <input type="text" class="form-control" name="shahar" id="email-input2">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="address-input" class="form-label text-white">Mahalla nomi</label>
+                                <input type="text" class="form-control" name="mahalla" id="address-input">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="address-input2" class="form-label text-white">Qaror raqami</label>
+                                <input type="text" class="form-control law" name="qaror" id="address-input2">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="address2-input" class="form-label text-white">Ko'chani nomi</label>
+                                    <input type="text" name="kocha" class="form-control" id="address2-input">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="address2-inputs" class="form-label text-white">Obyekt nomi</label>
+                                    <input type="text" name="tashkilot" class="form-control obj" id="address2-inputs">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="example-textarea" class="form-label text-white">Jarima sababi</label>
+                                <textarea class="form-control texts" name="jarimaSababi" id="example-textarea"
+                                    rows="3"></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="district-input" class="form-label text-white">Toifa</label>
+                                <select id="district-input" class="form-select">
+                                    <option selected>Tanlang...</option>
+                                    <option>Jarima</option>
+                                    <option>Noqununiy obyekt</option>
+        
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="vaqt" class="form-label text-white">Vaqtni Kiriting</label>
+                                <input type="date" name="vaqt" class="form-control" id="vaqt">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <label class="input-group-text" for="input-group-file">Hujjat yuklash</label>
+                                    <input type="file" name="pdf" class="form-control pdfFile" id="input-group-file">
+                                    <div class="reveiw">
+                                        <a href="#" class="embedParent fas fa-eye boxs">
+                                            <embed src="" class="heights">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <label class="input-group-text" for="image">Rasm yuklash</label>
+                                    <input type="file" name="rasm" class="form-control img-file" multiple id="image">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button id="to-do" type="submit" class="btn btn-primary">Yuborish</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="previews-wrapper">
+                <!-- <div class="img">
+                    <img src="./image/home-img-1.png" alt="sxs" id="img">
+                    <img src="./image/home-img-1.png" alt="sxs">
+                    <img src="./image/home-img-1.png" alt="sxs">
+                    <img src="./image/home-img-1.png" alt="sxs">
+                </div>
+                <div class="heading">
+                    <h1 class="sarlavha">Noqoniy obyekt</h1>
+                </div>
+                <div class="qarorMaz">
+                    <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, dignissimos.</p>
+                </div>
+                <div class="pdf">
+                    <a href="#" class="parents fas fa-eye text-primary">
+                        <embed src="" class="embeds">
+                    </a>
+                </div>
+                <div class="qarorRaq">
+                    <h1>PF-1001</h1>
+                </div>
+                <div class="ijro">
+                    <h1>
+                        ijro etilishiga <br>
+                        <span id="oy">2 oy</span><br>
+                        <span id="kun">2 kun</span><br>
+                        qoldi
+                    </h1>
+                </div>
+                <span class="fas fa-times  red" id="minusBtn"></span>
+            </div>
+        </div> -->
+        <!-- finish to box -->
+    </section>
+
+
+
+   
+
+    <span class="fas fa-times  hide hides"></span>
+
+    <!-- custom js link -->
+    <script src="./js/custom.js"></script>
+    <!-- boostrap js -->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
